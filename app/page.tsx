@@ -1,103 +1,144 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      {/* NAVBAR */}
+      <nav className="nav">
+        <div className="nav-inner">
+          <strong>Bedia Berra Doğruer</strong>
+          <div style={{ display: "flex", gap: 12 }}>
+            <a href="#hakkimda">Hakkımda</a>
+            <a href="#projeler">Projeler</a>
+            <a href="#galeri">Galeri</a>
+            <a href="#iletisim">İletişim</a>
+          </div>
         </div>
+      </nav>
+
+      <main className="container">
+        {/* HAKKIMDA */}
+        <section id="hakkimda" className="section">
+          <h2>Hakkımda</h2>
+
+          <p><b>Ad:</b> Bedia Berra Doğruer</p>
+          <p>
+            Bilgisayar mühendisliği 3. sınıf öğrencisiyim. 1 dönem boyunca Erasmus ile
+            Polonya’da eğitim gördüm. Orada gördüğüm ve edindiğim tecrübelerimle birçok alan
+            hakkında daha ayrıntılı ve kendimi geliştirme adına yararlı bilgiler edindim.
+          </p>
+          <p>
+            İlgilendiğim alanlar arasında <b>web sitesi geliştirmek</b> önemli bir yer ediniyor.
+            Genel olarak yazılım üzerinde <b>algoritmalar kurmayı</b> seviyorum.
+          </p>
+
+          <div className="chips">
+            <a className="chip" href="#projeler">Web Geliştirme</a>
+            <a className="chip" href="#galeri">UI/UX</a>
+            <a className="chip" href="#projeler">Full-Stack</a>
+            <a className="chip" href="#iletisim">İletişim</a>
+          </div>
+
+          <div className="grid" style={{ alignItems: "start", marginTop: 18 }}>
+            <div>
+              <img
+                src="/profile.jpg"
+                alt="Profil"
+                width={900}
+                height={600}
+                className="img"
+                style={{ borderRadius: 12 }}
+              />
+            </div>
+
+            <div className="card">
+              <h3>Öne Çıkan İlgi Alanları</h3>
+              <ul>
+                <li>Web sitesi geliştirme</li>
+                <li>Algoritma tasarımı ve problem çözme</li>
+                <li>Full-stack denemeler (frontend/backend)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        {/* PROJELER */}
+        <section id="projeler" className="section">
+          <h2>Projeler</h2>
+
+          <div className="grid">
+            <a
+              className="card card-link"
+              href="https://github.com/KULLANICI_ADIN/university-app"
+              target="_blank" rel="noopener noreferrer"
+              aria-label="UniversityApp GitHub"
+            >
+              <h3>UniversityApp</h3>
+              <p>Spring Boot + Angular ile öğrenci/öğretmen/ders yönetimi.</p>
+              <span className="arrow">→</span>
+            </a>
+
+            <div className="card">
+              <h3>Covid-19 Tracker</h3>
+              <p>Ülkelere göre verileri görselleştirme.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* GALERİ + VİDEO */}
+        <section id="galeri" className="section">
+          <h2>Galeri &amp; Video</h2>
+          <p>Video sayfa içinde gömülü olarak oynar.</p>
+
+          <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, marginBottom: 16 }}>
+            <iframe
+              src="https://www.youtube.com/embed/YE7VzlLtp-4"  /* kendi videonla değiştir */
+              title="Tanıtım"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+              style={{ position: "absolute", inset: 0, width: "100%", height: "100%", border: 0, borderRadius: 12 }}
+            />
+          </div>
+
+          <div className="grid">
+            <div>
+              <img
+                src="/shot-1.jpg" alt="Çalışma 1" width={900} height={600} className="img"
+                style={{ borderRadius: 12 }}
+              />
+            </div>
+            <div>
+              <img
+                src="/shot-2.jpg" alt="Çalışma 2" width={900} height={600} className="img"
+                style={{ borderRadius: 12 }}
+              />
+            </div>
+          </div>
+        </section>
+
+        {/* İLETİŞİM */}
+        <section id="iletisim" className="section">
+          <h2>İletişim</h2>
+          <div className="grid">
+            <div className="card">
+              <ul>
+                <li>
+                  mail: <a href="mailto:berra0348@gmail.com">berra0348@gmail.com</a>
+                </li>
+                <li>
+                  LinkedIn:{" "}
+                  <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                    Profilim
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* FOOTER */}
+      <footer className="footer">
+        © {new Date().getFullYear()} Bedia Berra Doğruer • Öğrenci No: 905258
       </footer>
-    </div>
+    </>
   );
 }
