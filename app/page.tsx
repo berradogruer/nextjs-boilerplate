@@ -74,6 +74,7 @@ export default function Home() {
 
           <div className="grid" style={{ alignItems: "start", marginTop: 18 }}>
             <div>
+              {/* Profil foto */}
               <img src="/berra-colosseum.jpg" alt="Profil" width={900} height={600} className="img" style={{ borderRadius: 12 }} />
             </div>
 
@@ -171,8 +172,8 @@ export default function Home() {
           <h2>Galeri &amp; Video</h2>
           <p>Web geliştirme ile ilgili kısa bir <b>Shorts</b> videosu gömülü olarak oynar.</p>
 
+          {/* Shorts (embed) */}
           <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, marginBottom: 16 }}>
-            {/* Shorts linkinin ID'si: a-FJZ1NLjeg → embed formatı kullanılmalı */}
             <iframe
               src="https://www.youtube.com/embed/a-FJZ1NLjeg?rel=0"
               title="Web geliştirme shorts"
@@ -182,10 +183,30 @@ export default function Home() {
             />
           </div>
 
-          <div className="grid">
-            <div><img src="/shot-1.jpg" alt="Çalışma 1" width={900} height={600} className="img" style={{ borderRadius: 12 }}/></div>
-            <div><img src="/shot-2.jpg" alt="Çalışma 2" width={900} height={600} className="img" style={{ borderRadius: 12 }}/></div>
+          {/* ==== Yeni Galeri (senin dosya adlarınla) ==== */}
+          <h3 style={{marginTop: 12}}>Galeri</h3>
+          <p className="muted">Fotoğraflara tıklayarak büyütün.</p>
+
+          <div className="gallery-grid">
+            <a className="gallery-item" href="#g1"><img src="/berra-colosseum.jpg" alt="Profil - Kolezyum" loading="lazy" /></a>
+            <a className="gallery-item" href="#g2"><img src="/gallery/budapest.jpg"   alt="Budapeşte" loading="lazy" /></a>
+            <a className="gallery-item" href="#g3"><img src="/gallery/eyfel.jpg"      alt="Eyfel" loading="lazy" /></a>
+            <a className="gallery-item" href="#g4"><img src="/gallery/louvre.jpg"     alt="Louvre" loading="lazy" /></a>
+            <a className="gallery-item" href="#g5"><img src="/gallery/pisa.jpg"       alt="Pisa" loading="lazy" /></a>
+            <a className="gallery-item" href="#g6"><img src="/gallery/saray.jpg"      alt="Saray" loading="lazy" /></a>
+            <a className="gallery-item" href="#g7"><img src="/gallery/viyana.jpg"     alt="Viyana" loading="lazy" /></a>
+            <a className="gallery-item" href="#g8"><img src="/gallery/zaandam.jpg"    alt="Zaandam" loading="lazy" /></a>
           </div>
+
+          {/* Lightbox hedefleri */}
+          <div id="g1" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/berra-colosseum.jpg"      alt="Profil - Kolezyum" /></div>
+          <div id="g2" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/budapest.jpg"   alt="Budapeşte" /></div>
+          <div id="g3" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/eyfel.jpg"      alt="Eyfel" /></div>
+          <div id="g4" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/louvre.jpg"     alt="Louvre" /></div>
+          <div id="g5" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/pisa.jpg"       alt="Pisa" /></div>
+          <div id="g6" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/saray.jpg"      alt="Saray" /></div>
+          <div id="g7" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/viyana.jpg"     alt="Viyana" /></div>
+          <div id="g8" className="lightbox"><a className="close" href="#" aria-label="Kapat">×</a><img src="/gallery/zaandam.jpg"    alt="Zaandam" /></div>
         </section>
 
         {/* ===== İLETİŞİM ===== */}

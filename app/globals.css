@@ -166,6 +166,36 @@ body{
   padding:24px 16px; text-align:center; font-size:14px;
 }
 
+/* ===== Gallery (grid + lightbox) ===== */
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:14px;
+  margin-top:12px;
+}
+.gallery-item{
+  position:relative; overflow:hidden; border-radius:14px;
+  background: rgba(255,255,255,.85);
+  box-shadow: 0 8px 24px rgba(139,92,246,.18);
+  border:1px solid rgba(255,255,255,.45);
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.gallery-item:hover{ transform: translateY(-4px); filter:saturate(1.05); }
+.gallery-item img{ width:100%; height:220px; object-fit:cover; display:block; }
+
+/* Lightbox (CSS-only) */
+.lightbox{
+  position:fixed; inset:0; display:none; place-items:center; z-index:60;
+  background: rgba(20,16,25,.65); backdrop-filter: blur(6px);
+  padding:24px;
+}
+.lightbox img{ max-width:min(1000px, 95vw); max-height:85vh; border-radius:16px; }
+.lightbox:target{ display:grid; }
+.lightbox .close{
+  position:absolute; top:16px; right:20px; font-size:32px; color:#fff;
+  text-decoration:none; line-height:1; padding:4px 8px;
+}
+
 /* Responsive */
 @media (max-width: 900px){
   .hero{ grid-template-columns: 1fr; }
