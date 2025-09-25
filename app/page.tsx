@@ -232,9 +232,79 @@ export default function Home() {
       </main>
 
       {/* FOOTER */}
-      <footer className="footer">
-        © {new Date().getFullYear()} Bedia Berra Doğruer • Öğrenci No: 2211012019
-      </footer>
+<footer className="site-footer">
+  <div className="container footer-top">
+    {/* Sol/Marka */}
+    <div className="footer-brand">
+      <h3>Bedia Berra Doğruer</h3>
+      <p className="muted">
+        Web geliştirme ve algoritmalarla üretmeyi seven bir bilgisayar mühendisliği öğrencisi.
+      </p>
+
+      <div className="footer-social">
+        <a href="mailto:berra0348@gmail.com" aria-label="E-posta">
+          {/* envelope */}
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M3 7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z" stroke="currentColor" strokeWidth="1.8"/>
+            <path d="m3 7 9 6 9-6" stroke="currentColor" strokeWidth="1.8"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          {/* linkedin */}
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M6.94 8.5V19H3.75V8.5h3.19ZM5.34 7.12a1.85 1.85 0 1 1 0-3.7 1.85 1.85 0 0 1 0 3.7Zm6.96 11.88H9.16V8.5h3.01v1.43h.04c.42-.78 1.46-1.6 3.01-1.6 3.22 0 3.82 2.12 3.82 4.87V19h-3.19v-4.64c0-1.11-.02-2.55-1.56-2.55-1.56 0-1.8 1.22-1.8 2.47V19Z"/>
+          </svg>
+        </a>
+        <a href="#projeler" aria-label="Projeler">
+          {/* code <> */}
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="m9 18-6-6 6-6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+            <path d="m15 6 6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    {/* Hızlı Bağlantılar */}
+    <div>
+      <h4 className="footer-title">Hızlı Bağlantılar</h4>
+      <ul className="footer-list">
+        <li><a href="#hakkimda">Hakkımda</a></li>
+        <li><a href="#projeler">Projeler</a></li>
+        <li><a href="#yetenekler">Yetenekler</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#iletisim">İletişim</a></li>
+      </ul>
+    </div>
+
+    {/* İletişim */}
+    <div>
+      <h4 className="footer-title">İletişim</h4>
+      <ul className="footer-list">
+        <li>mail: <a href="mailto:berra0348@gmail.com">berra0348@gmail.com</a></li>
+        <li>LinkedIn: <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">Profilim</a></li>
+      </ul>
+    </div>
+
+    {/* Bülten (mailto – JS yok) */}
+    <div>
+      <h4 className="footer-title">Bülten</h4>
+      <p className="muted">Yeni projelerim için e-posta bırakabilirsin.</p>
+      <form action="mailto:berra0348@gmail.com" method="POST" encType="text/plain" className="footer-form">
+        <input type="email" name="email" placeholder="E-posta adresin" required />
+        <button type="submit">Kaydol</button>
+      </form>
+    </div>
+  </div>
+
+  <div className="footer-bottom">
+    <div className="container inner">
+      <small>© {new Date().getFullYear()} Bedia Berra Doğruer • Öğrenci No: 2211012019</small>
+      <a href="#top" className="to-top" aria-label="Başa dön">Başa Dön ↑</a>
+    </div>
+  </div>
+</footer>
+
     </>
   );
 }
