@@ -74,7 +74,7 @@ export default function Home() {
 
           <div className="grid" style={{ alignItems: "start", marginTop: 18 }}>
             <div>
-              <img src="/profile.jpg" alt="Profil" width={900} height={600} className="img" style={{ borderRadius: 12 }} />
+              <img src="/berra-colosseum.jpg" alt="Profil" width={900} height={600} className="img" style={{ borderRadius: 12 }} />
             </div>
 
             <div className="card">
