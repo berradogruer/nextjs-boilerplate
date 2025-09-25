@@ -175,7 +175,7 @@ export default function Home() {
             {/* Bir YouTube Shorts linkinden sadece ID'yi al ve aşağıya koy.
                Örn: https://youtube.com/shorts/ABC123  → ID: ABC123  → /embed/ABC123 */}
             <iframe
-              src="https://www.youtube.com/embed/ABC123?rel=0"  /* ← Kendi Shorts ID’n ile değiştir */
+              src="https://www.youtube.com/watch?v=LWjKo6E_uDc"  /* ← Kendi Shorts ID’n ile değiştir */
               title="Web geliştirme shorts"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
@@ -213,7 +213,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer className="footer">
-        © {new Date().getFullYear()} Bedia Berra Doğruer • Öğrenci No: 905258
+        © {new Date().getFullYear()} Bedia Berra Doğruer • Öğrenci No: 2211012019
       </footer>
     </>
   );
