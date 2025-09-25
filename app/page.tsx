@@ -22,7 +22,7 @@ export default function Home() {
             <div>
               <h1 className="hero-title">Bilgisayar Mühendisliği Öğrencisi & Web Geliştirici</h1>
               <p className="muted">
-                3. sınıf öğrencisi • Erasmus (Polonya) mezunu • Web geliştirme ve algoritmalarla üretmeyi seviyorum.
+                3. sınıf öğrencisi • Erasmus (Polonya) • Web geliştirme ve algoritmalarla üretmeyi seviyorum.
               </p>
               <div className="btns">
                 <a className="btn" href="#projeler">Projelerimi Gör</a>
