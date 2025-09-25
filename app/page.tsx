@@ -156,7 +156,7 @@ export default function Home() {
               <div>Web teknolojileri, veri yapıları ve sistem programlama odaklı dersler.</div>
             </div>
             <div className="timeline-item">
-              <b>2024 • Erasmus – Polonya</b>
+              <b>2025 Bahar Dönemi • Erasmus – Polonya</b>
               <div>1 dönemlik eğitim; çok disiplinli projeler ve kültürlerarası çalışma tecrübesi.</div>
             </div>
             <div className="timeline-item">
