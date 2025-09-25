@@ -172,10 +172,9 @@ export default function Home() {
           <p>Web geliştirme ile ilgili kısa bir <b>Shorts</b> videosu gömülü olarak oynar.</p>
 
           <div style={{ position: "relative", paddingBottom: "56.25%", height: 0, marginBottom: 16 }}>
-            {/* Bir YouTube Shorts linkinden sadece ID'yi al ve aşağıya koy.
-               Örn: https://youtube.com/shorts/ABC123  → ID: ABC123  → /embed/ABC123 */}
+            {/* Shorts linkinin ID'si: a-FJZ1NLjeg → embed formatı kullanılmalı */}
             <iframe
-              src="https://www.youtube.com/shorts/a-FJZ1NLjeg"  /* ← Kendi Shorts ID’n ile değiştir */
+              src="https://www.youtube.com/embed/a-FJZ1NLjeg?rel=0"
               title="Web geliştirme shorts"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen
