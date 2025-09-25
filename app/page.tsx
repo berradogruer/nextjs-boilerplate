@@ -58,7 +58,7 @@ export default function Home() {
           <p>
             Bilgisayar mühendisliği 3. sınıf öğrencisiyim. 1 dönem boyunca Erasmus ile Polonya’da
             eğitim gördüm. Orada gördüğüm ve edindiğim tecrübelerimle birçok alan hakkında daha
-            ayrıntılı ve kendimi geliştirme adına yararlı bilgiler edindim.
+            ayrıntılı ve kendimi geliştirme adına yararlı bilgiler edindim.Eğitim dışında farklı ülkeleri gezme ve farklı kültürden insanlarla tanışma fırsatım oldu.
           </p>
           <p>
             İlgilendiğim alanlar arasında <b>web sitesi geliştirmek</b> önemli bir yer ediniyor.
@@ -152,11 +152,11 @@ export default function Home() {
           <h2>Zaman Çizelgesi</h2>
           <div className="card timeline">
             <div className="timeline-item">
-              <b>2025 • 3. Sınıf</b>
+              <b>2025-2026 • 3. Sınıf</b>
               <div>Web teknolojileri, veri yapıları ve sistem programlama odaklı dersler.</div>
             </div>
             <div className="timeline-item">
-              <b>2025 Bahar Dönemi • Erasmus – Polonya</b>
+              <b>2024-2025 Bahar Dönemi • Erasmus – Polonya</b>
               <div>1 dönemlik eğitim; çok disiplinli projeler ve kültürlerarası çalışma tecrübesi.</div>
             </div>
             <div className="timeline-item">
